@@ -38,6 +38,11 @@
               pkgs.playwright-test
               pkgs.playwright-driver.browsers
             ];
+       LD_LIBRARY_PATH="${pkgs.lib.makeLibraryPath [
+         pkgs.mesa
+         pkgs.libglvnd
+         pkgs.mesa.drivers
+       ]}:$LD_LIBRARY_PATH";
             PLAYWRIGHT_BROWSERS_PATH = "${pkgs.playwright-driver.browsers}";
             PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD = 1;
             PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS = 1;
