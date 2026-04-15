@@ -1,0 +1,11 @@
+{
+  "editor.formatOnSave": true,
+  "nix.enableLanguageServer": true,
+  "nix.serverPath": "${workspaceFolder}/bin/nil",
+  "nix.serverSettings": {
+    "nil": "${workspaceFolder}/bin/nil"
+  },
+  "[nix]": {
+    "editor.defaultFormatter": "jnoortheen.nix-ide"
+  }
+}

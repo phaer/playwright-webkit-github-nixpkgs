@@ -1,0 +1,10 @@
+bin/
+nixkpgs-fmt
+node_modules
+result
+result-*
+.cache
+.direnv/
+__pycache__/
+*.pyc
+test-results/
